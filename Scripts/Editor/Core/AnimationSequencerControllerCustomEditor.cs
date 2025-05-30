@@ -337,7 +337,7 @@ namespace BrunoMikoski.AnimationSequencer
             EditorGUI.BeginChangeCheck();
             
             var playbackSpeedProperty = serializedObject.FindProperty("playbackSpeed");
-            playbackSpeedProperty.floatValue = EditorGUILayout.Slider("Playback Speed", playbackSpeedProperty.floatValue, 0, 2);
+            playbackSpeedProperty.floatValue = EditorGUILayout.Slider("Playback Speed", playbackSpeedProperty.floatValue, 0, 5);
 
             if (EditorGUI.EndChangeCheck())
             {
@@ -577,7 +577,7 @@ namespace BrunoMikoski.AnimationSequencer
             
             var oldLabelWidth = EditorGUIUtility.labelWidth;
             EditorGUIUtility.labelWidth = 65;
-            tweenTimeScale = EditorGUILayout.Slider("TimeScale", tweenTimeScale, 0, 2);
+            tweenTimeScale = EditorGUILayout.Slider("TimeScale", tweenTimeScale, 0, 5);
             EditorGUIUtility.labelWidth = oldLabelWidth;
 			
             UpdateSequenceTimeScale();

@@ -463,6 +463,11 @@ namespace BrunoMikoski.AnimationSequencer
             }
         }
 
+        public void SetPlaybackSpeed(float speed)
+        {
+            playbackSpeed = speed;
+        }
+
 #if UNITASK_ENABLED
         public async UniTask PlayAsync()
         {
