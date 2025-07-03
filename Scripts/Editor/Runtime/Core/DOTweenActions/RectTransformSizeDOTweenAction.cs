@@ -1,6 +1,5 @@
 ﻿#if DOTWEEN_ENABLED
 using System;
-using BrunoMikoski.AnimationSequencer;
 using DG.Tweening;
 using UnityEngine;
 
